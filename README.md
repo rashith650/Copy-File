@@ -1,4 +1,6 @@
-# Copy-File
+
+## DATE:
+## Ex No 11 -  Copy-File
 ## AIM:
 To write a python program for copying the contents from one file to another file.
 ## EQUIPEMENT'S REQUIRED: 
@@ -6,36 +8,58 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
-Load the CSV into a DataFrame.
+Create a file.
 ### Step 2: 
- Print the number of contents to be displayed using df.head().
+Write some lines in that file.
 ### Step 3: 
-The number of rows returned is defined in Pandas option settings.
+Create a python file.
 ### Step 4:  
-Check your system's maximum column with the pd.options.display.max_column statement.
+Write a code to copy the content of the file to a new file.
 ### Step 5: 
-Increase the maximum number of rows to display the entire DataFrame
+Run the program.
 ### Step 6: 
-End the program.
+Display the output
 ## PROGRAM:
 ```
-#Developed by:MOHAMED RASHITH S
-#Register number:24001082
-def copy(fname,newfile):
-    with open(fname) as fp:
-        with open(newfile,'w') as fp1:
-            data=fp.read()
-            fp1.write(data)
-copy("textfile1.txt","textfile2.txt")
-    
+
+
+
+
+#Program for copying the contents from one file to another file.
+#Developed by MOHAMED RASHITH S
+#Reg num : 24001082
+
+
+with open("file1.txt","r") as f1:
+    with open("copy.txt","w") as f2:
+        line=f1.read()
+        f2.write(line)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
-### OUTPUT:
-![image-2](https://github.com/user-attachments/assets/0df72a1c-838d-42eb-a2e8-298858881754)
+## OUTPUT:
+### file.txt
+![Screenshot (131)](https://github.com/user-attachments/assets/66c04663-0985-40d5-adc6-3dc226354237)
 
+### Python File Execution
 
+![Screenshot (13)](https://github.com/user-attachments/assets/d0c86803-e26b-4704-8ed6-213103231c47)
 
-![image-1](https://github.com/user-attachments/assets/d51782d2-7b89-4265-9100-ebb021e527de)
-
+### copy.txt
+![Screenshot (132)](https://github.com/user-attachments/assets/1d201e09-d62a-482b-8eef-fa8a5f164eaf)
 
 
 ## RESULT:
